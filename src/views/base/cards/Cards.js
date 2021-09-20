@@ -8,16 +8,16 @@ import {
   CCol,
   CRow,
   CLink,
-  CBadge,
-  CCollapse,
-  CFade,
-  CCardFooter, 
+  // CBadge,
+  // CCollapse,
+  // CFade,
+  // CCardFooter, 
 } from  '@coreui/react'
-import { cilDisabled, freeSet } from '@coreui/icons'
+// import { cilDisabled, freeSet } from '@coreui/icons'
 
 import CIcon from '@coreui/icons-react'
 
-import { DocsLink } from 'src/reusable'
+// import { DocsLink } from 'src/reusable'
 
 
 const Cards = () => {
@@ -36,7 +36,7 @@ const Cards = () => {
   const [collapsed4, setCollapsed4] = React.useState(true)
   const [collapsed5, setCollapsed5] = React.useState(true)
   const [collapsed6, setCollapsed6] = React.useState(true)  
-  const [showCard, setShowCard] = React.useState(true)
+  // const [showCard, setShowCard] = React.useState(true)
 
   const handleButtonOn =()=>{
     setOn(false)
