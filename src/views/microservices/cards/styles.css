@@ -2,13 +2,13 @@
     float: left!important;
 }
 .CCol-CCard{
-    /* justify-content: center !important; */
+    justify-items: center !important;
     width: 100%;
     display: flex !important;
     flex-wrap: wrap;
 }
 .CCard{
-    border: solid black 1px;
+    border: solid black 0.6px;
     margin: 5px;
     width: 25vw !important;
     height: 12vw !important;
@@ -22,8 +22,6 @@
     font-size:12px !important;
     /* background-color: #39f; */
     color: black;
+    
 
-}
-.c-Icon cil-media-stop{
-    color:red !important;
 }

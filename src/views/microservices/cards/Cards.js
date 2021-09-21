@@ -81,7 +81,6 @@ const Cards = () => {
     setOn6(true)
   }
 
-
   return (
     <>
       <CRow>
@@ -181,6 +180,22 @@ const Cards = () => {
             <CIcon className='CIcon' name={collapsed5 ? "cil-media-play" : "cil-media-pause"}/>                      
             </CLink>
             </div> : "" }         
+          </CCard>
+          <CCard className='CCard'>
+            <CCardHeader>
+              Started Fedex
+              <div className="card-header-actions">
+                <CSwitch onClick={on6 ? handleButtonOn6 : handleButtonOff6} className={'float-right mb-0'} color={'info'} defaultChecked size={'sm'} tabIndex="0" />                
+              </div>
+            </CCardHeader>
+            <CCardBody>
+             SERVICES
+            </CCardBody>
+            {on6 ? <div className='borderIcon'>
+            <CLink style={{float:'left',paddingLeft: 30,paddingBottom:30, color:'black'}} className="card-header-actions" onClick={()=> setCollapsed6(!collapsed6)}>
+            <CIcon className='CIcon' name={collapsed6 ? "cil-media-play" : "cil-media-pause"}/>                      
+            </CLink>
+            </div> : "" }           
           </CCard>
           <CCard className='CCard'>
             <CCardHeader>
