@@ -15,21 +15,41 @@ const _nav =  [
   {
     _tag: 'CSidebarNavTitle',
     _children: ['Services']
-  },  
+  },
+  
+  
   {
     _tag: 'CSidebarNavDropdown',
-    name: 'Grid',
-    route: '/gird',
+    name: ' MicroServices',
+    route: '/microservices',
     icon: 'cil-puzzle',
     _children: [
       
       {
         _tag: 'CSidebarNavItem',
-        name: 'Grid',
-        to: '/gird/Grid',
+        name: 'Fedex',
+        to: '/microservices/cards',
       },      
     ],
   },
+
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: ' Grid',
+    route: '/grid',
+    icon: 'cil-puzzle',
+    _children: [
+      
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Gird Table',
+        to: '/grid/grid/Grid',
+      },      
+    ],
+  },
+
+
+
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Pages',
