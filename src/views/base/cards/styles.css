@@ -1,0 +1,29 @@
+.myIcon{
+    float: left!important;
+}
+.CCol-CCard{
+    /* justify-content: center !important; */
+    width: 100%;
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.CCard{
+    border: solid black 1px;
+    margin: 5px;
+    width: 25vw !important;
+    height: 12vw !important;
+    min-width: 300px !important;
+    min-height: 200px !important;
+}
+.CIcon{
+    width: 30px !important;
+    height: 30px !important;    
+    border-radius: 5px;
+    font-size:12px !important;
+    /* background-color: #39f; */
+    color: black;
+
+}
+.c-Icon cil-media-stop{
+    color:red !important;
+}
