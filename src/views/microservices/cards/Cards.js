@@ -85,9 +85,13 @@ const Cards = () => {
     <>
       <CRow>
       <CCol className='CCol-CCard' >         
-          <CCard className='CCard'>
+          <CCard accentColor="primary" className='CCard'>
             <CCardHeader>
-              Started Fedex
+            {on ? <div className='borderIcon'>
+            <CLink style={{float:'left', color:'black'}} className="card-header-actions" onClick={()=> setCollapsed(!collapsed)}>
+            <CIcon className='CIcon' name={collapsed ? "cil-media-play" : "cil-media-pause"}/>                      
+            </CLink>
+            </div> : "" } 
               <div className="card-header-actions">
                 <CSwitch value={on} onClick={on ? handleButtonOn : handleButtonOff} className={'float-right mb-0'} color={'info'} defaultChecked size={'sm'} tabIndex="0" />                
               </div>
@@ -95,15 +99,15 @@ const Cards = () => {
             <CCardBody>
              SERVICES
             </CCardBody>
-            {on ? <div className='borderIcon'>
-            <CLink style={{float:'left',paddingLeft: 30,paddingBottom:30, color:'black'}} className="card-header-actions" onClick={()=> setCollapsed(!collapsed)}>
-            <CIcon className='CIcon' name={collapsed ? "cil-chevron-circle-right-alt" : "cil-media-stop"}/>                      
-            </CLink>
-            </div> : "" }                      
+                                 
           </CCard>
-          <CCard className='CCard'>
+          <CCard accentColor="primary" className='CCard'>
             <CCardHeader>
-              Started Fedex
+            {on1 ? <div className='borderIcon'>
+            <CLink style={{float:'left', color:'black'}} className="card-header-actions" onClick={()=> setCollapsed1(!collapsed1)}>
+            <CIcon className='CIcon' name={collapsed1 ? "cil-media-play" : "cil-media-pause"}/>                      
+            </CLink>
+            </div> : "" }  
               <div className="card-header-actions">
                 <CSwitch onClick={on1 ? handleButtonOn1 : handleButtonOff1} className={'float-right mb-0'} color={'info'} defaultChecked size={'sm'} tabIndex="0" />                
               </div>
@@ -111,15 +115,15 @@ const Cards = () => {
             <CCardBody>
              SERVICES
             </CCardBody>           
-            {on1 ? <div className='borderIcon'>
-            <CLink style={{float:'left',paddingLeft: 30,paddingBottom:30, color:'black'}} className="card-header-actions" onClick={()=> setCollapsed1(!collapsed1)}>
-            <CIcon className='CIcon' name={collapsed1 ? "cil-media-play" : "cil-media-pause"}/>                      
+            
+          </CCard>
+          <CCard accentColor="primary" className='CCard'>
+            <CCardHeader>
+             {on2 ? <div className='borderIcon'>
+            <CLink style={{float:'left', color:'black'}} className="card-header-actions" onClick={()=> setCollapsed2(!collapsed2)}>
+            <CIcon className='CIcon' name={collapsed2 ? "cil-media-play" : "cil-media-pause"}/>                      
             </CLink>
             </div> : "" }  
-          </CCard>
-          <CCard className='CCard'>
-            <CCardHeader>
-              Started Fedex
               <div className="card-header-actions">
                 <CSwitch onClick={on2 ? handleButtonOn2 : handleButtonOff2} className={'float-right mb-0'} color={'info'} defaultChecked size={'sm'} tabIndex="0" />                
               </div>
@@ -127,15 +131,15 @@ const Cards = () => {
             <CCardBody>
              SERVICES
             </CCardBody>           
-            {on2 ? <div className='borderIcon'>
-            <CLink style={{float:'left',paddingLeft: 30,paddingBottom:30, color:'black'}} className="card-header-actions" onClick={()=> setCollapsed2(!collapsed2)}>
-            <CIcon className='CIcon' name={collapsed2 ? "cil-media-play" : "cil-media-pause"}/>                      
-            </CLink>
-            </div> : "" }  
+            
           </CCard>
-          <CCard className='CCard'>
+          <CCard accentColor="primary" className='CCard'>
             <CCardHeader>
-              Started Fedex
+            {on3 ? <div className='borderIcon'>
+            <CLink style={{float:'left',color:'black'}} className="card-header-actions" onClick={()=> setCollapsed3(!collapsed3)}>
+            <CIcon className='CIcon' name={collapsed3 ? "cil-media-play" : "cil-media-pause"}/>                      
+            </CLink>
+            </div> : "" } 
               <div className="card-header-actions">
                 <CSwitch onClick={on3 ? handleButtonOn3 : handleButtonOff3} className={'float-right mb-0'} color={'info'} defaultChecked size={'sm'} tabIndex="0" />                
               </div>
@@ -143,15 +147,15 @@ const Cards = () => {
             <CCardBody>
              SERVICES
             </CCardBody>
-            {on3 ? <div className='borderIcon'>
-            <CLink style={{float:'left',paddingLeft: 30,paddingBottom:30, color:'black'}} className="card-header-actions" onClick={()=> setCollapsed3(!collapsed3)}>
-            <CIcon className='CIcon' name={collapsed3 ? "cil-media-play" : "cil-media-pause"}/>                      
-            </CLink>
-            </div> : "" }         
+                    
           </CCard>
-          <CCard className='CCard'>
+          <CCard accentColor="primary" className='CCard'>
             <CCardHeader>
-              Started Fedex
+            {on4 ? <div className='borderIcon'>
+            <CLink style={{float:'left', color:'black'}} className="card-header-actions" onClick={()=> setCollapsed4(!collapsed4)}>
+            <CIcon className='CIcon' name={collapsed4 ? "cil-media-play" : "cil-media-pause"}/>                      
+            </CLink>
+            </div> : "" }    
               <div className="card-header-actions">
                 <CSwitch onClick={on4 ? handleButtonOn4 : handleButtonOff4} className={'float-right mb-0'} color={'info'} defaultChecked size={'sm'} tabIndex="0" />                
               </div>
@@ -159,31 +163,30 @@ const Cards = () => {
             <CCardBody>
              SERVICES
             </CCardBody>
-            {on4 ? <div className='borderIcon'>
-            <CLink style={{float:'left',paddingLeft: 30,paddingBottom:30, color:'black'}} className="card-header-actions" onClick={()=> setCollapsed4(!collapsed4)}>
-            <CIcon className='CIcon' name={collapsed4 ? "cil-media-play" : "cil-media-pause"}/>                      
-            </CLink>
-            </div> : "" }           
+                   
           </CCard>
-          <CCard className='CCard'>
+          <CCard accentColor="primary" className='CCard'>
             <CCardHeader>
-              Started Fedex
+            {on5 ? <div className='borderIcon'>
+            <CLink style={{float:'left', color:'black'}} className="card-header-actions" onClick={()=> setCollapsed5(!collapsed5)}>
+            <CIcon className='CIcon' name={collapsed5 ? "cil-media-play" : "cil-media-pause"}/>                      
+            </CLink>
+            </div> : "" }
               <div className="card-header-actions">
                 <CSwitch onClick={on5 ? handleButtonOn5 : handleButtonOff5} className={'float-right mb-0'} color={'info'} defaultChecked size={'sm'} tabIndex="0" />                
               </div>
             </CCardHeader>
             <CCardBody>
              SERVICES
-            </CCardBody>
-            {on5 ? <div className='borderIcon'>
-            <CLink style={{float:'left',paddingLeft: 30,paddingBottom:30, color:'black'}} className="card-header-actions" onClick={()=> setCollapsed5(!collapsed5)}>
-            <CIcon className='CIcon' name={collapsed5 ? "cil-media-play" : "cil-media-pause"}/>                      
-            </CLink>
-            </div> : "" }         
+            </CCardBody>                     
           </CCard>
-          <CCard className='CCard'>
+          <CCard accentColor="primary" className='CCard'>
             <CCardHeader>
-              Started Fedex
+            {on6 ? <div className='borderIcon'>
+            <CLink style={{float:'left', color:'black'}} className="card-header-actions" onClick={()=> setCollapsed6(!collapsed6)}>
+            <CIcon className='CIcon' name={collapsed6 ? "cil-media-play" : "cil-media-pause"}/>                      
+            </CLink>
+            </div> : "" } 
               <div className="card-header-actions">
                 <CSwitch onClick={on6 ? handleButtonOn6 : handleButtonOff6} className={'float-right mb-0'} color={'info'} defaultChecked size={'sm'} tabIndex="0" />                
               </div>
@@ -191,15 +194,15 @@ const Cards = () => {
             <CCardBody>
              SERVICES
             </CCardBody>
+                      
+          </CCard>
+          <CCard accentColor="primary" className='CCard'>
+            <CCardHeader>
             {on6 ? <div className='borderIcon'>
-            <CLink style={{float:'left',paddingLeft: 30,paddingBottom:30, color:'black'}} className="card-header-actions" onClick={()=> setCollapsed6(!collapsed6)}>
+            <CLink style={{float:'left', color:'black'}} className="card-header-actions" onClick={()=> setCollapsed6(!collapsed6)}>
             <CIcon className='CIcon' name={collapsed6 ? "cil-media-play" : "cil-media-pause"}/>                      
             </CLink>
-            </div> : "" }           
-          </CCard>
-          <CCard className='CCard'>
-            <CCardHeader>
-              Started Fedex
+            </div> : "" }
               <div className="card-header-actions">
                 <CSwitch onClick={on6 ? handleButtonOn6 : handleButtonOff6} className={'float-right mb-0'} color={'info'} defaultChecked size={'sm'} tabIndex="0" />                
               </div>
@@ -207,11 +210,7 @@ const Cards = () => {
             <CCardBody>
              SERVICES
             </CCardBody>
-            {on6 ? <div className='borderIcon'>
-            <CLink style={{float:'left',paddingLeft: 30,paddingBottom:30, color:'black'}} className="card-header-actions" onClick={()=> setCollapsed6(!collapsed6)}>
-            <CIcon className='CIcon' name={collapsed6 ? "cil-media-play" : "cil-media-pause"}/>                      
-            </CLink>
-            </div> : "" }           
+                       
           </CCard>
         </CCol>
       </CRow>
